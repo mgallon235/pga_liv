@@ -12,7 +12,7 @@ def parsing():
 	parser.add_argument('-tgt', '--targfile', default='scraperesults.txt', 
 						type=str, help='File to write scraped data to?')
 	parser.add_argument('-url', '--website', type=str, help='Sport page URL?',
-						default='http://www.asapsports.com/showcat.php?id=5')
+						default='http://www.asapsports.com/showcat.php?id=4')
 	return parser.parse_args()
 
 def is_answer_start(s):
