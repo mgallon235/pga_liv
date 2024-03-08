@@ -62,6 +62,16 @@ def get_answers(soup, main_text):
 			   and 'MODERATOR' not in s and 'FastScripts' not in s]
 	return answers
 
+def get_questions(bold_tags):
+    questions = []
+    for tag in bold_tags:
+        if tag.text.startswith('Q.'):
+            parent_p = tag.find_parent('p')
+            if parent_p:
+                question_text = parent_p.get_text(strip=True)
+                questions.append(question_text)
+    return questions
+
 def parse_interview(url):
 	'''
 	Parameters:	url of interview
