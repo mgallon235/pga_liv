@@ -15,13 +15,25 @@ def parsing():
 						default='http://www.asapsports.com/showcat.php?id=4')
 	return parser.parse_args()
 
+# def is_answer_start(s):
+# 	# true iff first n words are capitalized and followed by a colon
+# 	n = 4
+# 	words = s.split(' ',n)[:-1]
+# 	for word in words:
+# 		if word.isupper() and word.endswith(':'): return True
+# 	return False
+
 def is_answer_start(s):
-	# true iff first n words are capitalized and followed by a colon
-	n = 4
-	words = s.split(' ',n)[:-1]
-	for word in words:
-		if word.isupper() and word.endswith(':'): return True
-	return False
+    # true if the first n words are capitalized and followed by a colon
+    n = 4
+    words = s.split(' ', n)[:-1]
+    for word in words:
+        if word.endswith(':'):
+            # Need to handle names like "McILROY"
+            parts = [p for p in word.split() if p]
+            if all(part.isupper() or part.startswith('Mc') for part in parts):
+                return True
+    return False
 
 def join_answers(answers):
 	'''
