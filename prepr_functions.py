@@ -123,11 +123,15 @@ def freq_table(dataframe,group,variable,ascend):
     var = dataframe.groupby(group)[variable].count().reset_index()
     var = var.sort_values(by=variable,ascending=ascend)
     var['total'] = var[variable].sum()
-    var['perc'] = (var['reply_sentence'] / var['total']).round(2)
+    var['perc'] = (var[variable] / var['total']).round(2)
     var['accum'] = var['perc'].cumsum()
     return var
 
 
+############ Creating a Frequency Matrix
+
+def count_nonzero_columns(row):
+    return (row != 0).sum()
 
 
 ################################ Other Functions
