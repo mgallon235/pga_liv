@@ -15,14 +15,6 @@ def parsing():
 						default='http://www.asapsports.com/showcat.php?id=4')
 	return parser.parse_args()
 
-# def is_answer_start(s):
-# 	# true iff first n words are capitalized and followed by a colon
-# 	n = 4
-# 	words = s.split(' ',n)[:-1]
-# 	for word in words:
-# 		if word.isupper() and word.endswith(':'): return True
-# 	return False
-
 def is_answer_start(s):
     # true if the first n words are capitalized and followed by a colon
     n = 4
