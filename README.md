@@ -18,11 +18,9 @@ The project aims to scrape data from golf-related websites, preprocess the text 
 
 ## Folder Structure
 pga_liv/
-│
 ├── datasets/
 │ ├── Players_Links.csv
 │ ├── Press_Conferences.csv
-│
 ├── Cleaning_EDA.ipynb
 ├── Golf_Scrapper.ipynb
 ├── Intro_Txt_Final_Proj.pdf
