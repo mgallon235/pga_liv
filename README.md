@@ -16,25 +16,6 @@ The project aims to scrape data from golf-related websites, preprocess the text 
 - Exploratory Data Analysis (EDA)
 - Building predictive models
 
-## Folder Structure
-pga_liv/
-├── datasets/
-│ ├── Players_Links.csv
-│ ├── Press_Conferences.csv
-├── Cleaning_EDA.ipynb
-├── Golf_Scrapper.ipynb
-├── Intro_Txt_Final_Proj.pdf
-├── Predictions.ipynb
-├── Preprocessor.ipynb
-├── Txt_Mining.ipynb
-├── cleaning_functions.py
-├── prepr_functions.py
-├── prepro_classes.py
-├── scraping_model.py
-├── confusion.png
-├── jon_las.png
-├── README.md
-
 
 ## Installation
 To set up the project locally, follow these steps:
