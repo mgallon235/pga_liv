@@ -1,6 +1,6 @@
 # PGA_LIV Text Mining Project
 
-This repository contains a text mining project focused on analyzing and predicting outcomes in professional golf events, particularly PGA and LIV tournaments. The project involves data scraping, preprocessing, and analysis using various Python tools and libraries.
+This repository contains a text mining project focused on analyzing and predicting the sentiment from golf players press conferences at different events, particularly PGA and LIV tournaments. The project involves data scraping, preprocessing, and analysis using various Python tools and libraries.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -8,7 +8,6 @@ This repository contains a text mining project focused on analyzing and predicti
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 The project aims to scrape data from golf-related websites, preprocess the text data, and apply machine learning models to make predictions. Key tasks include:
@@ -73,6 +72,4 @@ To set up the project locally, follow these steps:
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
